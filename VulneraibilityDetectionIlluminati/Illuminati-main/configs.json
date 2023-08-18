@@ -1,0 +1,17 @@
+{
+  "dataset_name": {
+    "graph": "bbbp",
+    "node": "citeseer"},
+
+  "explainer": {
+    "mode": 0,
+    "node": 1,
+    "node_rate": 10,
+    "synchronize": 1,
+    "epochs": 50,
+    "lr": 5e-2,
+    "agg1": "max",
+    "agg2": "",
+    "sample": 128
+  }
+}
