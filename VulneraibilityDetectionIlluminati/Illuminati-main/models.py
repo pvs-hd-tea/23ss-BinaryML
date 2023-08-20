@@ -28,12 +28,12 @@ class GCNConv_(GCNConv):
         super(GCNConv_, self).__init__(*args, **kwargs)
 
     def propagate(self, edge_index: Adj, size: Size = None, **kwargs):
-        size = self.__check_input__(edge_index, size)
+        size = self._check_input(edge_index, size)
 
         # Run "fused" message and aggregation (if applicable).
         if (isinstance(edge_index, SparseTensor) and self.fuse
                 and not self.__explain__):
-            coll_dict = self.__collect__(self.__fused_user_args__, edge_index,
+            coll_dict = self._collect(self.__fused_user_args__, edge_index,
                                          size, kwargs)
 
             msg_aggr_kwargs = self.inspector.distribute(
@@ -45,7 +45,7 @@ class GCNConv_(GCNConv):
 
         # Otherwise, run both functions in separation.
         elif isinstance(edge_index, Tensor) or not self.fuse:
-            coll_dict = self.__collect__(self.__user_args__, edge_index, size,
+            coll_dict = self._collect(self._user_args, edge_index, size,
                                          kwargs)
 
             msg_kwargs = self.inspector.distribute('message', coll_dict)
@@ -54,7 +54,7 @@ class GCNConv_(GCNConv):
             # For `GNNExplainer`, we require a separate message and aggregate
             # procedure since this allows us to inject the `edge_mask` into the
             # message passing computation scheme.
-            if self.__explain__:
+            if self._explain:
                 edge_mask = self.__edge_mask__
                 # Some ops add self-loops to `edge_index`. We need to do the
                 # same for `edge_mask` (but do not train those).
