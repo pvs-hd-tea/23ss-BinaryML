@@ -67,7 +67,7 @@ else:
     print("duration:", duration)
 
 acc_test, acc_loss = evaluate(data_loader['test'], model, loss_fc)
-print(acc_test)
+print("Accuracy:",acc_test)
 
 duration = 0.
 results_path = "./node_masks/" + dataset_name + "/"
