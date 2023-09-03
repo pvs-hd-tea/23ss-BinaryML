@@ -1,3 +1,5 @@
 DiveIntoGraphs/raw/
 DiveIntoGraphs/*_property/
 DiveIntoGraphs/tabularember/train_features.csv
+__pycache__
+venv/
