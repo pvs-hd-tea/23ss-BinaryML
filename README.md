@@ -41,4 +41,12 @@ pip install hrr --upgrade
 2. Install the required dependencies.
 3. Download the datasets from the mentioned links and extract it to the corresponding sub folder in the ```data``` directory (benign/malware/vulnerability).
 4. You can load and visualize the data sets using ```dataset.py``` class.
-4. Run the ```hrrformer_mgpu.py``` script to train and evaluate the model.
+5. Run the ```hrrformer_mgpu.py``` script to train and evaluate the model.
+
+
+# 2. Vulnerability Detection Model (CodeBERT Transformer)
+
+## 2.1 Dataset
+
+Vulnerability Machine Learning Dataset: https://samate.nist.gov/SARD/test-suites/112
+
