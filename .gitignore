@@ -3,3 +3,5 @@ DiveIntoGraphs/*_property/
 DiveIntoGraphs/tabularember/train_features.csv
 __pycache__
 venv/
+pytorch_model.bin
+23ss-BinaryML.iml
