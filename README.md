@@ -1,5 +1,5 @@
 # 23ss-BinaryML
-## Project of the Practical Software internships "Machine Learning On Source Code" for beginners (IAP) / for advanced (IFP)
+## Practical "AI Methods and Tools for Programming"
 
 ## BinaryML : Classifying Binaries for Malware and Vulnerability Detection
 
