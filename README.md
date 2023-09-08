@@ -1,7 +1,8 @@
 # 23ss-BinaryML
-Practical in summer 2023: BinaryML
+# Project of the Practical Software internships "Machine Learning On Source Code" for beginners (IAP) / for advanced (IFP)
 
-# Malware & Vulnerability Detection Model
+# BinaryML : Classifying Binaries for Malware and Vulnerability Detection
+
 The main goal of this project is to combine and improve best machine learning approaches for detection of malware and vulnerabilities based on binaries.
 
 # 1. Malware Detection Model (HRR Transformers)
