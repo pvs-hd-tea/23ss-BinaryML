@@ -1,7 +1,7 @@
 # 23ss-BinaryML
-# Project of the Practical Software internships "Machine Learning On Source Code" for beginners (IAP) / for advanced (IFP)
+## Project of the Practical Software internships "Machine Learning On Source Code" for beginners (IAP) / for advanced (IFP)
 
-# BinaryML : Classifying Binaries for Malware and Vulnerability Detection
+## BinaryML : Classifying Binaries for Malware and Vulnerability Detection
 
 The main goal of this project is to combine and improve best machine learning approaches for detection of malware and vulnerabilities based on binaries.
 
