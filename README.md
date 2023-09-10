@@ -12,7 +12,9 @@ The main goal of this project is to combine and improve best machine learning ap
   4. Evaluation on Real Binaries and Benchmarking!
  
 ##### Two security detection models for malware and vulnerability domains make up the majority of this project. For more information and setup, see the readme files in the respective directory.
-1. Malware detection model: ```/MalwareDetectionHRR```
-2. Vulnerability detection model: ```/VulnerabilityDetectionRomeo```
+1. Malware detection model: ```MalwareDetectionHRR/```
+2. Vulnerability detection model: ```VulnerabilityDetectionRomeo/```
 
 ##### Below is the link to the results of our literature search which enabled us to identify the best apporach in each domain: ```https://docs.google.com/spreadsheets/d/18S8JuEuAODwQkR4lEggQR33j6HUOi8ETXkKnT6neS9A/edit#gid=0```
+
+##### You can find the detailed developer's documentation, final presentation PPT, and other docs related to the project in ```docs/``` directory.
